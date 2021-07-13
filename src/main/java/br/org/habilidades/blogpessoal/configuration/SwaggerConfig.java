@@ -33,19 +33,19 @@ public class SwaggerConfig {
 	}
 
 	private static Contact contact() {
-		return new Contact("João Nicolete", "https://github.com/JoaoNicolete", "joao.nicolete@usp.br");
+		return new Contact("Lucas Escaler", "https://github.com/LucasEscaler", "lucas.escaler@outlook.com");
 	}
 
 	private static List<Response> responseMessageForGET() {
 		return new ArrayList<Response>() {
 			private static final long serialVersionUID = 1L;
 			{
-				add(new ResponseBuilder().code("200").description("Top, miga!").build());
-				add(new ResponseBuilder().code("201").description("Ta certinho, adoro.").build());
-				add(new ResponseBuilder().code("401").description("Sigilosoh").build());
-				add(new ResponseBuilder().code("403").description("Aqui não entra gay").build());
-				add(new ResponseBuilder().code("404").description("Que isso?").build());
-				add(new ResponseBuilder().code("500").description("Puts, não deu certo").build());
+				add(new ResponseBuilder().code("200").description("Sucesso!").build());
+				add(new ResponseBuilder().code("201").description("Objeto Criado!").build());
+				add(new ResponseBuilder().code("401").description("Não Autorizado!").build());
+				add(new ResponseBuilder().code("403").description("Proibido!").build());
+				add(new ResponseBuilder().code("404").description("Não Encontrado!").build());
+				add(new ResponseBuilder().code("500").description("Erro!").build());
 			}
 		};
 	}
